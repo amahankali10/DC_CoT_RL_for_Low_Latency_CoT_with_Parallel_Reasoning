@@ -1,0 +1,27 @@
+deepspeed_config: { }
+distributed_type: MULTI_GPU
+downcast_bf16: 'yes'
+dynamo_backend: 'NO'
+# fsdp_config:
+#   fsdp_auto_wrap_policy: TRANSFORMER_BASED_WRAP
+#   fsdp_backward_prefetch_policy: BACKWARD_PRE
+#   fsdp_offload_params: false
+#   fsdp_sharding_strategy: NO_SHARD
+#   fsdp_state_dict_type: FULL_STATE_DICT
+#   fsdp_transformer_layer_cls_to_wrap: Qwen2DecoderLayer
+#   fsdp_no_split_module_classes: ["nn.Embedding"]
+#   fsdp_use_orig_params: true
+gpu_ids: null
+machine_rank: 0
+main_process_ip: null
+main_process_port: null
+main_training_function: main
+megatron_lm_config: { }
+mixed_precision: 'bf16'
+num_machines: 1
+num_processes: 6
+rdzv_backend: static
+same_network: true
+tpu_name: null
+tpu_zone: null
+use_cpu: false
