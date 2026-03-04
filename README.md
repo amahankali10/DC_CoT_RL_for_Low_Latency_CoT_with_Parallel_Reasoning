@@ -18,6 +18,14 @@ This is the official implementation of Divide-and-Conquer CoT (DC-CoT), availabl
 - [Citation](#citation)
 - [License](#license)
 
+## Models and SFT Dataset
+
+Our models trained with RL can be downloaded at the following links:
+- [DC-CoT](https://huggingface.co/amahanka/DC-CoT)
+- [DC-CoT-HLP](https://huggingface.co/amahanka/DC-CoT-HLP)
+
+Our SFT dataset can be downloaded [here](https://huggingface.co/datasets/amahanka/DC-CoT-SFT-Dataset).
+
 ## Setup - Conda Environment and .env File
 
 The Conda environment can be created as follows:
@@ -36,7 +44,7 @@ Alternatively, we provide Conda environments in zipped format as follows:
 - parallel_sft_2: [Download from Google Drive](https://drive.google.com/file/d/1o1fQe2ImcTXe_yzj39dpxhaK3VZp-JzM/view?usp=sharing)
 
 parallel_sft_2 can be used for our SFT run, while verl is used for all other scripts. These Conda environments were 
-compressed using conda pack. Please follow the instructions on the Conda-Pack webpage[https://conda.github.io/conda-pack/] 
+compressed using conda pack. Please follow the instructions on the [Conda-Pack webpage](https://conda.github.io/conda-pack/) 
 to extract the environments to your machine, to a desirable directory.
 
 Additionally, the scripts below require certain environment variables to be set in .env. We give an example in .env.example,
